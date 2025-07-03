@@ -1,0 +1,660 @@
+[
+    {
+        "cid_code": "1137",
+        "description": "Lid Opened",
+        "event_type": "Alarm",
+        "sia_code": "TA",
+        "hik_code": "1137"
+    },
+    {
+        "cid_code": "3137",
+        "description": "Lid Closed",
+        "event_type": "Alarm",
+        "sia_code": "TR",
+        "hik_code": "3137"
+    },
+    {
+        "cid_code": "1301",
+        "description": "AC Power Down/Expander AC Power Down/Repeater AC Power Down/Expander AC Power Dowm",
+        "event_type": "Status",
+        "sia_code": "AT",
+        "hik_code": "1301"
+    },
+    {
+        "cid_code": "3301",
+        "description": "AC Power Restored/Expander AC Power Restored/Repeater AC Power Restored",
+        "event_type": "Status",
+        "sia_code": "AR",
+        "hik_code": "3301"
+    },
+    {
+        "cid_code": "1302",
+        "description": "Battery Low",
+        "event_type": "Status",
+        "sia_code": "YT",
+        "hik_code": "1302"
+    },
+    {
+        "cid_code": "3302",
+        "description": "Battery Voltage Restored",
+        "event_type": "Status",
+        "sia_code": "YR",
+        "hik_code": "3302"
+    },
+    {
+        "cid_code": "1311",
+        "description": "Battery Fault/Battery Disconnected/Power Running Out/Repeater Battery Disconnected",
+        "event_type": "Status",
+        "sia_code": "YT",
+        "hik_code": "1310"
+    },
+    {
+        "cid_code": "3311",
+        "description": "Battery Fault Restored/Battery Reconnected/Repeater Battery Reconnected",
+        "event_type": "Status",
+        "sia_code": "YR",
+        "hik_code": "3310"
+    },
+    {
+        "cid_code": "1351",
+        "description": "Main Signalling Path ATP Fault",
+        "event_type": "Status",
+        "sia_code": "LT",
+        "hik_code": "1351"
+    },
+    {
+        "cid_code": "3351",
+        "description": "Main Signalling Path ATP Restored",
+        "event_type": "Status",
+        "sia_code": "LR",
+        "hik_code": "3351"
+    },
+    {
+        "cid_code": "1352",
+        "description": "Backup Signalling ATP Path Fault",
+        "event_type": "Status",
+        "sia_code": "LT",
+        "hik_code": "1352"
+    },
+    {
+        "cid_code": "3352",
+        "description": "Backup Signalling ATP Path Restored",
+        "event_type": "Status",
+        "sia_code": "LR",
+        "hik_code": "3352"
+    },
+    {
+        "cid_code": "1401",
+        "description": "Disarmed",
+        "event_type": "Operation",
+        "sia_code": "OP",
+        "hik_code": "1401"
+    },
+    {
+        "cid_code": "3401",
+        "description": "Away Armed",
+        "event_type": "Operation",
+        "sia_code": "CL",
+        "hik_code": "3401"
+    },
+    {
+        "cid_code": "3441",
+        "description": "Stay Armed",
+        "event_type": "Operation",
+        "sia_code": "NL",
+        "hik_code": "3441"
+    },
+    {
+        "cid_code": "1403",
+        "description": "Auto Disarmed",
+        "event_type": "Operation",
+        "sia_code": "OA",
+        "hik_code": "1403"
+    },
+    {
+        "cid_code": "3403",
+        "description": "Auto Armed",
+        "event_type": "Operation",
+        "sia_code": "CA",
+        "hik_code": "3403"
+    },
+    {
+        "cid_code": "1607",
+        "description": "Walk Test Enabled",
+        "event_type": "Operation",
+        "sia_code": "TS",
+        "hik_code": "1607"
+    },
+    {
+        "cid_code": "3607",
+        "description": "Walk Test Disabled",
+        "event_type": "Operation",
+        "sia_code": "TE",
+        "hik_code": "3607"
+    },
+    {
+        "cid_code": "1627",
+        "description": "Enter Programming",
+        "event_type": "Operation",
+        "sia_code": "LB",
+        "hik_code": "1627"
+    },
+    {
+        "cid_code": "1628",
+        "description": "Exit Programming",
+        "event_type": "Operation",
+        "sia_code": "LX",
+        "hik_code": "1628"
+    },
+    {
+        "cid_code": "1350",
+        "description": "Cellular Data Network Exception/SIM Card Exception/Wi-Fi Disconnected/IP Conflict/Wired Network Fault/Data limitation Reached",
+        "event_type": "Status",
+        "sia_code": "NT",
+        "hik_code": "1920"
+    },
+    {
+        "cid_code": "3350",
+        "description": "Cellular Data Network Connected/SIM Card Detected/Wi-Fi Connected/IP Conflict Restored/Wired Network Connected",
+        "event_type": "Status",
+        "sia_code": "NR",
+        "hik_code": "3920"
+    },
+    {
+        "cid_code": "1344",
+        "description": "RF Signal Excpetion",
+        "event_type": "Status",
+        "sia_code": "XQ",
+        "hik_code": "1923"
+    },
+    {
+        "cid_code": "3344",
+        "description": "RF Signal Restored",
+        "event_type": "Status",
+        "sia_code": "XH",
+        "hik_code": "3923"
+    },
+    {
+        "cid_code": "1305",
+        "description": "Reset to Defaults",
+        "event_type": "Operation",
+        "sia_code": "ZY",
+        "hik_code": "1305"
+    },
+    {
+        "cid_code": "1406",
+        "description": "Alarm Silenced",
+        "event_type": "Operation",
+        "sia_code": "BC",
+        "hik_code": "1406"
+    },
+    {
+        "cid_code": "1452",
+        "description": "Late to Disarm",
+        "event_type": "Status",
+        "sia_code": "CT",
+        "hik_code": "1452"
+    },
+    {
+        "cid_code": "1455",
+        "description": "Auto Arming Failed",
+        "event_type": "Operation",
+        "sia_code": "CD",
+        "hik_code": "1455"
+    },
+    {
+        "cid_code": "1454",
+        "description": "Arming Failed",
+        "event_type": "Operation",
+        "sia_code": "CI",
+        "hik_code": "1822"
+    },
+    {
+        "cid_code": "1948",
+        "description": "Sending Email Failed",
+        "event_type": "Status",
+        "sia_code": "BQ",
+        "hik_code": "1948"
+    },
+    {
+        "cid_code": "1865",
+        "description": "Unregistered Tag Operation",
+        "event_type": "Status",
+        "sia_code": "BD",
+        "hik_code": "1865"
+    },
+    {
+        "cid_code": "1121",
+        "description": "Duress Alarm",
+        "event_type": "Operation",
+        "sia_code": "HA",
+        "hik_code": "1121"
+    },
+    {
+        "cid_code": "3250",
+        "description": "Patrol Signing",
+        "event_type": "Operation",
+        "sia_code": "DW",
+        "hik_code": "3965"
+    },
+    {
+        "cid_code": "1130",
+        "description": "Timeout Alarm/Instant Alarm/Burglary Alarm/24H Alarm",
+        "event_type": "Alarm",
+        "sia_code": "BA",
+        "hik_code": "1126"
+    },
+    {
+        "cid_code": "3130",
+        "description": "Timeout Alarm Restored/Instant Alarm Restored/Burglary Alarm Restored/24H Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "BH",
+        "hik_code": "3126"
+    },
+    {
+        "cid_code": "1134",
+        "description": "Delay Alarm/Entry Alarm/Exit Alarm",
+        "event_type": "Alarm",
+        "sia_code": "BA",
+        "hik_code": "1134"
+    },
+    {
+        "cid_code": "3134",
+        "description": "Delay Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "BH",
+        "hik_code": "3134"
+    },
+    {
+        "cid_code": "1139",
+        "description": "Confirmed Alarm",
+        "event_type": "Alarm",
+        "sia_code": "BV",
+        "hik_code": "1139"
+    },
+    {
+        "cid_code": "3139",
+        "description": "Confirmed Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "BW",
+        "hik_code": "3139"
+    },
+    {
+        "cid_code": "1131",
+        "description": "Intrusion Detection/Line Crossing Alarm/Motion Detection Alarm Started",
+        "event_type": "Alarm",
+        "sia_code": "BA",
+        "hik_code": "1759"
+    },
+    {
+        "cid_code": "3131",
+        "description": "Intrusion Detection Restored/Line Crossing Alarm Restored/Motion Detection Alarm Ended",
+        "event_type": "Alarm",
+        "sia_code": "BH",
+        "hik_code": "3759"
+    },
+    {
+        "cid_code": "1112",
+        "description": "Fire Source Alarm",
+        "event_type": "Alarm",
+        "sia_code": "FA",
+        "hik_code": "1780"
+    },
+    {
+        "cid_code": "3112",
+        "description": "Fire Source Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "FH",
+        "hik_code": "3780"
+    },
+    {
+        "cid_code": "1158",
+        "description": "High Temperature Pre-Alarm/High Temperature Alarm",
+        "event_type": "Alarm",
+        "sia_code": "KS",
+        "hik_code": "1781"
+    },
+    {
+        "cid_code": "3158",
+        "description": "Restored/High Temperature Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "KR",
+        "hik_code": "3781"
+    },
+    {
+        "cid_code": "1159",
+        "description": "Low Temperature Pre-Alarm/Low Temperature Alarm",
+        "event_type": "Alarm",
+        "sia_code": "ZS",
+        "hik_code": "1782"
+    },
+    {
+        "cid_code": "3159",
+        "description": "Restored/Low Temperature Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "ZR",
+        "hik_code": "3782"
+    },
+    {
+        "cid_code": "1949",
+        "description": "Network Camera Disconnected",
+        "event_type": "Status",
+        "sia_code": "BR",
+        "hik_code": "1949"
+    },
+    {
+        "cid_code": "3949",
+        "description": "Network Camera Connected",
+        "event_type": "Status",
+        "sia_code": "DS",
+        "hik_code": "3949"
+    },
+    {
+        "cid_code": "1120",
+        "description": "Panic Alarm/Silent Panic Alarm/Keypad/Keyfob Panic Alarm",
+        "event_type": "Alarm",
+        "sia_code": "PA",
+        "hik_code": "1129"
+    },
+    {
+        "cid_code": "1148",
+        "description": "Device Motion Alarm/Motion Detection Alarm",
+        "event_type": "Alarm",
+        "sia_code": "AG",
+        "hik_code": "1148"
+    },
+    {
+        "cid_code": "3148",
+        "description": "Device Motion Alarm Restored/Motion Detection Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "CO",
+        "hik_code": "3148"
+    },
+    {
+        "cid_code": "1149",
+        "description": "Masking Alarm/LM-WE)",
+        "event_type": "Alarm",
+        "sia_code": "BA",
+        "hik_code": "1149"
+    },
+    {
+        "cid_code": "3149",
+        "description": "Masking Alarm Restored/LM-WE)",
+        "event_type": "Alarm",
+        "sia_code": "BH",
+        "hik_code": "3149"
+    },
+    {
+        "cid_code": "1384",
+        "description": "Peripheral Undervoltage/Repeater Battery Low/Sounder Battery Low/Keyfob Undervoltage/Wireless Detector Battery Low",
+        "event_type": "Status",
+        "sia_code": "XT",
+        "hik_code": "1347"
+    },
+    {
+        "cid_code": "3384",
+        "description": "Peripheral Undervoltage Restored/Repeater Battery Voltage Restored/Sounder Battery Voltage Restored/Keyfob Undervoltage Restored",
+        "event_type": "Status",
+        "sia_code": "XR",
+        "hik_code": "3347"
+    },
+    {
+        "cid_code": "1381",
+        "description": "Peripheral Offline/Repeater Offline/Expander Offline/Sounder Offline/Wireless Detector Offline",
+        "event_type": "Status",
+        "sia_code": "XL",
+        "hik_code": "1348"
+    },
+    {
+        "cid_code": "3381",
+        "description": "Peripheral Online/Repeater Online/Expander Online/Sounder Online/Wireless Detector Online",
+        "event_type": "Status",
+        "sia_code": "XC",
+        "hik_code": "3348"
+    },
+    {
+        "cid_code": "1306",
+        "description": "Peripheral Deleted/Repeater Deleted/Expander Deleted/Sounder Deleted/Detector Deleted",
+        "event_type": "Operation",
+        "sia_code": "CG",
+        "hik_code": "1980"
+    },
+    {
+        "cid_code": "3306",
+        "description": "Peripheral Enrolled/Repeater Enrolled/Expander Enrolled/Sounder Enrolled/Detector Enrolled",
+        "event_type": "Operation",
+        "sia_code": "ED",
+        "hik_code": "3980"
+    },
+    {
+        "cid_code": "1312",
+        "description": "Power Output Short Circuit/Overcurrent Protection Triggered",
+        "event_type": "Status",
+        "sia_code": "YI",
+        "hik_code": "1328"
+    },
+    {
+        "cid_code": "3312",
+        "description": "Power Output Short Circuit Restored/Overcurrent Protection Restored",
+        "event_type": "Status",
+        "sia_code": "YJ",
+        "hik_code": "3328"
+    },
+    {
+        "cid_code": "1144",
+        "description": "Peripheral Lid Opened/Repeater Lid Opened/Expander Lid Opened/Sounder Lid Opened/Detector Lid Opened/External Module Disconnected",
+        "event_type": "Alarm",
+        "sia_code": "TA",
+        "hik_code": "1346"
+    },
+    {
+        "cid_code": "3144",
+        "description": "Peripheral Lid Closed/Repeater Lid Closed/Expander Lid Closed/Sounder Lid Closed/Detector Lid Closed/External Module Connected",
+        "event_type": "Alarm",
+        "sia_code": "TR",
+        "hik_code": "3346"
+    },
+    {
+        "cid_code": "1380",
+        "description": "Sensor Fault",
+        "event_type": "Status",
+        "sia_code": "FT",
+        "hik_code": "1380"
+    },
+    {
+        "cid_code": "3380",
+        "description": "Sensor Fault Restored",
+        "event_type": "Status",
+        "sia_code": "FJ",
+        "hik_code": "3380"
+    },
+    {
+        "cid_code": "1319",
+        "description": "Overvoltage Protection Triggered",
+        "event_type": "Status",
+        "sia_code": "YP",
+        "hik_code": "1319"
+    },
+    {
+        "cid_code": "3319",
+        "description": "Overvoltage Protection Restored",
+        "event_type": "Status",
+        "sia_code": "YQ",
+        "hik_code": "3319"
+    },
+    {
+        "cid_code": "1133",
+        "description": "Vibration Alarm",
+        "event_type": "Alarm",
+        "sia_code": "BA",
+        "hik_code": "1125"
+    },
+    {
+        "cid_code": "3133",
+        "description": "Vibration Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "BH",
+        "hik_code": "3125"
+    },
+    {
+        "cid_code": "1750",
+        "description": "Drilling Alarm",
+        "event_type": "Alarm",
+        "sia_code": "IA",
+        "hik_code": "1750"
+    },
+    {
+        "cid_code": "3750",
+        "description": "Drilling Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "IR",
+        "hik_code": "3750"
+    },
+    {
+        "cid_code": "1501",
+        "description": "Keypad Locked/Tag Reader Locked",
+        "event_type": "Status",
+        "sia_code": "DK",
+        "hik_code": "1862"
+    },
+    {
+        "cid_code": "3501",
+        "description": "Keypad Unlocked/Tag Reader Unlocked",
+        "event_type": "Status",
+        "sia_code": "DO",
+        "hik_code": "3862"
+    },
+    {
+        "cid_code": "1461",
+        "description": "Incorrect Password",
+        "event_type": "Status",
+        "sia_code": "JA",
+        "hik_code": "1467"
+    },
+    {
+        "cid_code": "1110",
+        "description": "Keypad/Keyfob Fire Alarm",
+        "event_type": "Alarm",
+        "sia_code": "FA",
+        "hik_code": "1811"
+    },
+    {
+        "cid_code": "1100",
+        "description": "Keypad/Keyfob Medical Alarm",
+        "event_type": "Alarm",
+        "sia_code": "MA",
+        "hik_code": "1847"
+    },
+    {
+        "cid_code": "3100",
+        "description": "Medical Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "MH",
+        "hik_code": "3100"
+    },
+    {
+        "cid_code": "3120",
+        "description": "Panic Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "PH",
+        "hik_code": "3129"
+    },
+    {
+        "cid_code": "1570",
+        "description": "Bypassed",
+        "event_type": "Alarm",
+        "sia_code": "QB",
+        "hik_code": "1570"
+    },
+    {
+        "cid_code": "3570",
+        "description": "Bypass Restored",
+        "event_type": "Alarm",
+        "sia_code": "QU",
+        "hik_code": "3570"
+    },
+    {
+        "cid_code": "1409",
+        "description": "Keyswitch Zone Disarmed",
+        "event_type": "Operation",
+        "sia_code": "CS",
+        "hik_code": "1309"
+    },
+    {
+        "cid_code": "3409",
+        "description": "Keyswitch Zone Armed",
+        "event_type": "Operation",
+        "sia_code": "OS",
+        "hik_code": "3409"
+    },
+    {
+        "cid_code": "1111",
+        "description": "Fire Alarm",
+        "event_type": "Alarm",
+        "sia_code": "FA",
+        "hik_code": "1110"
+    },
+    {
+        "cid_code": "3111",
+        "description": "Fire Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "FH",
+        "hik_code": "3110"
+    },
+    {
+        "cid_code": "1114",
+        "description": "Fire Alarm",
+        "event_type": "Alarm",
+        "sia_code": "KA",
+        "hik_code": "1114"
+    },
+    {
+        "cid_code": "3114",
+        "description": "Fire Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "KH",
+        "hik_code": "3114"
+    },
+    {
+        "cid_code": "1153",
+        "description": "Temperature Exception Alarm",
+        "event_type": "Alarm",
+        "sia_code": "KT",
+        "hik_code": "1786"
+    },
+    {
+        "cid_code": "3153",
+        "description": "Restored",
+        "event_type": "Alarm",
+        "sia_code": "KJ",
+        "hik_code": "3786"
+    },
+    {
+        "cid_code": "1154",
+        "description": "Water Leakage Alarm",
+        "event_type": "Alarm",
+        "sia_code": "WA",
+        "hik_code": "1154"
+    },
+    {
+        "cid_code": "3154",
+        "description": "Water Leakage Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "WH",
+        "hik_code": "3154"
+    },
+    {
+        "cid_code": "1162",
+        "description": "Gas Leakage Alarm",
+        "event_type": "Alarm",
+        "sia_code": "GA",
+        "hik_code": "1151"
+    },
+    {
+        "cid_code": "3162",
+        "description": "Gas Leakage Alarm Restored",
+        "event_type": "Alarm",
+        "sia_code": "GH",
+        "hik_code": "3151"
+    }
+]

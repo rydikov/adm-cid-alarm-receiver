@@ -1,0 +1,17 @@
+services:
+  receiver:
+    build: .
+    volumes:
+    - ./server.py:/app/server.py
+    ports:
+    - 8882:8882
+    env_file: 
+      - path: .env
+        required: true # default
+      - path: ./override.env
+        required: false
+    stdin_open: true
+    tty: true
+    restart: always
+    command: python /app/server.py
+    
