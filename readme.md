@@ -25,7 +25,7 @@ docker run -it -p 1880:1880 -p 9001:9001 -v "$PWD/mosquitto/config:/mosquitto/co
 Test
 
 ```
-telnet localhost 5000 
+telnet localhost 8882 
 ```
 
 And send: B2C20046"ADM-CID"0008L0#777[#777|1401 02 501][SУлица]_09:15:28,07-03-2025
@@ -33,7 +33,7 @@ And send: B2C20046"ADM-CID"0008L0#777[#777|1401 02 501][SУлица]_09:15:28,07
 Or 
 
 ```
-echo -n 'B2C20046"ADM-CID"0008L0#777[#777|1401 02 501][SУлица]_09:15:28,07-03-2025' | nc 127.0.0.1 5000
+echo -n 'B2C20046"ADM-CID"0008L0#777[#777|1401 02 501][SУлица]_09:15:28,07-03-2025' | nc 127.0.0.1 8882
 ```
 
 For MQTT test use
@@ -52,4 +52,10 @@ subscribe.callback(print_msg, "#", hostname="localhost", port=1880)
 or
 ```
 mosquitto_sub -t "#" -v
+```
+
+For forvarding port to localhost
+
+```
+ssh -R 8882:localhost:8882 user@receiver_ip
 ```

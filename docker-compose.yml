@@ -14,5 +14,6 @@ services:
     tty: true
     restart: always
     command: python /app/server.py
-    network_mode: host
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     

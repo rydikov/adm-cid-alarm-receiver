@@ -154,7 +154,10 @@ class Event:
     def to_mqtt(self):
         return json.dumps({
             'panel_number': self.panel_number,
+            'date': self.date,
+            'time': self.time,
             'event_qualifier': self.data.event_qualifier,
+            'cia_code': self.data.cid_code,
             'event_code': self.data.event_code,
             'group_or_partition_number': self.data.group_or_partition_number,
             'zone_number_or_user_number': self.data.zone_number_or_user_number,
@@ -229,10 +232,10 @@ def process_alarm(event):
             logger.info(f"Event: {event.raw} Description: {event.data.description}")
             try:
                 publish.single(
-                    topic=f"/devices/ax-pro/controls/Log/{event.data.group_or_partition_number}/{event.data.zone_number_or_user_number}",
+                    topic=f"/devices/ax-pro/controls/partitions/{event.data.group_or_partition_number}/{event.data.zone_number_or_user_number}",
                     payload=event.to_mqtt(),
                     client_id=event.panel_number,
-                    hostname=os.environ.get('MQTT_HOSTNAME', 'localhost'),
+                    hostname=os.environ.get('MQTT_HOSTNAME', 'host.docker.internal'),
                     port=int(os.environ.get('MQTT_PORT', 1880)),
                 )
             except ConnectionRefusedError as e:
