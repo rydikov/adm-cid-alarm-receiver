@@ -1,14 +1,23 @@
-Build and run
+## Запуск
+Для сборки проекта нужно склонировать проект и выполнить
 
 ```
 docker compose build
 ```
 
+Для запуска
+
 ```
 docker compose up -d
 ```
 
-Create ./mosquitto/config/mosquitto.conf and add (only for debug)
+В фале wb-example.js пример правил для обработки события постановки на охрану одной из областей
+
+
+## Тестирование
+Чтобы протестировать локально – нужно запустить MQTT сервер:
+
+Создайте файл ./mosquitto/config/mosquitto.conf and add (only for debug)
 
 ```
 listener 1880
@@ -16,27 +25,25 @@ allow_anonymous true
 ```
 
 
-Run MQTT server
+Запустите MQTT сервер
 
 ```
 docker run -it -p 1880:1880 -p 9001:9001 -v "$PWD/mosquitto/config:/mosquitto/config"  eclipse-mosquitto
 ```
 
-Test
+Тест
 
 ```
-telnet localhost 8882 
+echo -e 'B2C20046"ADM-CID"0008L0#777[#777|3401 01 501][SУлица]_09:15:28,07-03-2025' | telnet localhost 8882
 ```
 
-And send: B2C20046"ADM-CID"0008L0#777[#777|1401 02 501][SУлица]_09:15:28,07-03-2025
-
-Or 
+Или
 
 ```
 echo -n 'B2C20046"ADM-CID"0008L0#777[#777|1401 02 501][SУлица]_09:15:28,07-03-2025' | nc 127.0.0.1 8882
 ```
 
-For MQTT test use
+Можно подписаться на топик для проверки значений через Python
 
 ```python
 import json
@@ -49,13 +56,16 @@ def print_msg(client, userdata, message):
 
 subscribe.callback(print_msg, "#", hostname="localhost", port=1880)
 ```
-or
+
+Или консольную утилиту
 ```
 mosquitto_sub -t "#" -v
 ```
 
-For forvarding port to localhost
+Или использовать программу: https://mqtt-explorer.com/
 
+
+Для проброса локального порта в целях отладки можно использовать
 ```
 ssh -R 8882:localhost:8882 user@receiver_ip
 ```
